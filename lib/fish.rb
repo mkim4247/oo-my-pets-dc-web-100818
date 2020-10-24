@@ -11,5 +11,6 @@ class Fish
   
   def self.all
     @@all
+  end
   
 end
