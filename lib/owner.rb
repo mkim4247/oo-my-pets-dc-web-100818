@@ -55,13 +55,11 @@ class Owner
   end
   
   def sell_pets
-    
-    if !self.pets.each { |type, pets| pets = [] }
-      self.pets.each { |type, pets| pets.clear }
-    else
-      self.pets.collect { |type, pets| 
-        pets.collect { |attribute| attribute.mood == "nervous" }}
-    end
+    self.pets.collect { |type, pets| 
+      pets.each { |attribute| attribute.mood == "nervous" }
+    pet.clear
+    }
+    #self.pets.each { |type, pets| pets.clear }
   end
   
 end
