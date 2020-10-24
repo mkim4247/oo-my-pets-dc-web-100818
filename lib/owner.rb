@@ -50,4 +50,8 @@ class Owner
     Cat.all.collect { |cat| cat.mood = "happy" }
   end
   
+  def feed_fish
+    Fish.all.collect { |fish| fish.mood = "happy" }
+  end
+  
 end
