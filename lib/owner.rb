@@ -13,11 +13,11 @@ class Owner
   end
   
   def self.count
-    self.class.all.count
+    self.all.count
   end
   
   def self.reset_all
-    self.class.all.clear
+    self.all.clear
   end
   
   
