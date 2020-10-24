@@ -1,16 +1,17 @@
 class Fish
-  attr_reader :name, :owner
-  attr_accessor :mood
-  
+  attr_accessor :mood, :owner
+  attr_reader :name
+
+  @@all = []
+
   def initialize(name, owner)
     @name = name
-    @owner = owner
     @mood = "nervous"
+    @owner = owner
     @@all << self
   end
-  
+
   def self.all
     @@all
   end
-  
 end
