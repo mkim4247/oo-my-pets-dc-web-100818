@@ -11,6 +11,6 @@ class Owner
     self.class.all.count
   end
   
-  
+  def.self.clear
   
 end
