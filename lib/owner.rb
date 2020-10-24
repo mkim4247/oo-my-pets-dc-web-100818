@@ -59,7 +59,10 @@ class Owner
       pets.each { |attribute| attribute.mood = "nervous" }
     pets.clear
     }
-    #self.pets.each { |type, pets| pets.clear }
+  end
+  
+  def list_pets
+    
   end
   
 end
