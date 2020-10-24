@@ -3,6 +3,11 @@ class Owner
   
   @@all = []
   
+  def initialize(name)
+    :name = name
+    self.class.all << self
+  end
+  
   def self.all
     @@all
   end
@@ -11,6 +16,10 @@ class Owner
     self.class.all.count
   end
   
-  def.self.clear
+  def.self.reset_all
+    self.class.all.clear
+  end
+  
+  
   
 end
