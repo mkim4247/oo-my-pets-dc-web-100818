@@ -13,7 +13,7 @@ class Owner
   end
   
   def self.count
-   @@all.count
+    self.class.all.count
   end
   
   def self.reset_all
