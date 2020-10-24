@@ -4,7 +4,7 @@ class Owner
   @@all = []
   
   def initialize(name)
-    :name = name
+    @name = name
     self.class.all << self
   end
   
