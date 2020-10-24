@@ -7,5 +7,10 @@ class Owner
     @@all
   end
   
+  def self.count
+    self.class.all.count
+  end
+  
+  
   
 end
